@@ -1,0 +1,676 @@
+body{
+font-family: 'Roboto', sans-serif;
+}
+
+
+/* big screen */
+
+/* NAV*** */
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    top: 0px;
+    z-index: 2;
+}
+.nav img{
+    width: 120px;
+    height: 120px;
+}
+.menu {
+    margin: auto 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu > * {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  margin: auto 18px;
+}
+.menu > * >* {
+  color: white;
+    font-size: 1rem;
+}
+.menu > a > h2::before{
+content: " ";
+position: absolute;
+background-color: red;
+width: 100%;
+height: 2px;
+top: 25px;
+transform: scalex(0);
+transition: 0.3s ease-in-out;
+transform-origin: left;
+} 
+.menu > a > h2:hover::before{
+transform: scalex(1);
+transition: 0.3s ease-in-out;
+} 
+
+/* HAKKIMDA*** */
+
+.hakkımda{
+    margin-top: 128px;
+}
+.hakkımda h1{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+.about{
+    display: flex;
+}
+.about > div{
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.firstColumn > img {
+    width: 200px;
+    margin: auto;
+}
+.head{
+    display: flex;
+    margin: 0 10px  15px 0;
+}
+.headFirst{
+    margin-top: 35px;
+}
+.head svg{
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    margin-right: 15px;
+}
+.personel > :nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+.personel > :nth-child(2) > div{
+    display: flex;
+}
+.personel > :nth-child(2) > div > label{
+width: 220px;
+font-weight: bolder;
+}
+
+/* Eğitim*** */
+
+.educate small{
+    font-size: 0.9rem;
+    color: #21252991;;
+}
+.educateUl > li{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* İş Deneyimleri*** */
+
+.job > div{
+    margin: 15px;
+ }
+.job h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0 5px 20px;
+ }
+.job h3{
+    font-size: 1.2rem;
+ }
+.job p{
+text-align:justify; }
+h2 span{
+    font-size: 1rem;
+    color: #21252991;
+}
+
+/* Sertifikalar */
+
+.firstColumn{
+    border-right: 1px solid rgb(83, 83, 83);
+}
+
+.headerTwo{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0 5px 0px;
+ }
+.lisance > div > h3{
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-right: 5px;
+ }
+
+/* Bilgisayar */
+
+ .computer > div{
+     display: flex;
+     justify-content: space-between;
+     margin: 3px 0;
+ }
+ .computer > div > label{
+font-weight: bold;
+ }
+
+/* inputu dışarıdan aldım ve üzerinde düzenlemeler yaptım */
+input[type="range"] {
+    -webkit-appearance: none; 
+    width: 12em;
+    background: transparent;
+    position: relative;
+}   
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    margin: .2em 0;
+    background: hsl(0, 100%, 50%);
+    border-radius: 100%;
+    box-shadow: 
+    inset .8em .8em 5px -8px rgba(255, 255, 255, .4),
+    inset -.4em -.4em 10px -3px rgba(0,0,0,.2),
+    0.7em 0.5em 7px -0.5em rgba(0,0,0,.4);;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    background: transparent;
+    width: 100%;
+    padding: 0 1em;
+    border-radius: 2em;
+    box-shadow: 
+    inset .6em 1em 10px rgba(0,0,0,.15),
+    inset -.6em -1em 10px rgba(255, 255, 255, 0.199);
+}
+input[type="range"]::before {
+    content: "0 1 2 3 4 5 6 7 8 9";
+    position: absolute;
+    text-align: center;
+    color: #212529;
+    font-size: 0.8em;
+    letter-spacing: .16em;
+    top: -18px; 
+    left: 0; 
+    padding: 1.6em;
+    text-shadow: .5px .5px 0.9px rgba(0,0,0, .4);
+    z-index: -1;
+}
+
+/* paragraph */
+
+.paragraph p{
+    font-size: 1.2rem;
+    text-align: justify;
+    letter-spacing: 0.05rem;
+    text-indent:50px;
+}
+.paragraph p::first-letter{
+    font-size: 1.8rem;
+}
+.delete{
+    display: none;
+}
+
+/* Projects */
+
+.project{
+        margin-top: 128px;
+}
+.project > *{
+        margin: 20px;
+}
+.project > h1{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+.project > div > div > h2{
+    white-space: nowrap;
+}
+.bar{
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    border-top-right-radius : 20px;
+    border-bottom-right-radius : 20px;
+    margin-top: 5px;
+}
+.firstHead{
+    display: flex;
+}
+.project > div > div> iframe{
+    width: 70vw;
+    height: 42vw;
+    position: relative;
+    left: calc(50% - 35vw);
+}
+.project > div > div > p{
+margin: 10px;
+}
+
+/* yorumlar */
+
+.yorumlar{
+    margin-top: 128px;
+}
+.yorumlar h1{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+.yorum{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(90, 90, 90, 0.11);
+}
+.yorum > span > img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+.harf{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: skyblue;
+    text-align: center;
+    font-family:  serif;
+    font-size: 3.6rem;
+}
+.yorum > span{
+    display: inline-block;
+    vertical-align: middle;}
+.yorum > :nth-child(2){
+    width: calc(100% - 170px);
+}
+form{
+margin-top: 40px;
+}
+fieldset{
+    margin: 20px;
+    border:2px solid rgba(49, 49, 49, 0.63);
+    position: relative;
+}
+fieldset > div{
+    margin: 10px;
+}
+fieldset > :nth-child(2){
+    margin-top: 25px;
+}
+fieldset > button{
+    width: 200px;
+    position: relative;
+    left: calc(50% - 100px);
+    margin-bottom: 5px;
+}
+legend{
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    background-color: white;
+    margin-left: 18px;
+    width: 215px;
+    padding: 3px;
+}
+
+/*.iletişim*/
+
+.iletişim{
+    margin-top: 128px;
+}
+.iletişim h1{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+.tel{
+    background-color: #ff0b0b18;
+    padding: 20px 0;
+}
+
+.tel a svg{
+width: 30px;
+height: 30px;
+margin: 0 20px;
+}
+.tel a p{
+font-size: 1.3rem;
+}
+.tel a{
+    text-decoration: none;
+    color: #292121;
+    display: flex;
+    width: fit-content;
+    margin:  20px 10px ;
+}
+.tel a:hover{
+position: relative;
+left: 5px;
+}
+.logo{    
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.logo h2{
+   position: relative;
+   top: 12px;
+font-weight: bolder;
+}
+
+.logos{
+    display: flex;
+
+}
+.logos > a > i{
+margin: 0 10px;
+color: #212529;
+}
+.logos > a > i:hover{
+position: relative;
+top: -5px;
+}
+
+
+
+.adres{
+    margin: 10px
+}
+.adres p{
+    margin: 3px
+}
+.adres >div{
+    position: relative
+}
+.adres iframe{
+          width:100%;
+          height:55vw;
+          max-height: 600px;
+          margin: auto;
+          box-shadow: 0 0 10px;
+}
+.computer > div{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+}
+
+
+
+
+
+
+/* medium screen */
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+*{
+    font-size: 0.9rem;
+}
+
+/* NAV*** */
+
+.nav{
+display: block;
+}
+.nav img{
+    width: 90x;
+    height: 90px;
+    display: block;
+    margin: auto;
+}
+
+.nav > :nth-child(1) *{
+    margin: auto;
+}
+.menu{
+    margin: auto 20px;
+    justify-content: space-around;
+}
+
+/* HAKKIMDA****/
+
+.about{
+    flex-direction: column;
+}
+.about > div{
+    width: 100%;
+}
+.about > div > *{
+    margin: auto;
+    width: 400px;
+}
+
+/* gelecekler */
+
+.delete{
+    display: inherit;
+    margin-bottom: 15px;
+}
+
+.firstColumn{
+    border: none;
+}
+.yorum > span > img{
+    width: 70px;
+    height: 70px;
+}
+.harf{
+    width: 70px;
+    height: 70px;
+    font-size: 3.4rem;
+}
+
+.yorum > :nth-child(2){
+    width: calc(100% - 140px);
+}
+legend{
+    width: 180px;
+}
+input[type="range"]::before {
+    top: -15px; 
+}
+.menu > a > h2::before{
+top: 20px;
+} 
+
+}
+
+
+
+
+
+/* small screen */
+
+@media screen and (min-width: 274px) and (max-width: 499px) {
+
+    *{
+    font-size: 0.8rem;
+}
+/* NAV*** */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav img{
+    width: 100px;
+    height: 100px;
+}
+.nav > :nth-child(1){
+    margin: auto 0;
+}
+.menu{
+    flex-direction: column;
+}
+
+/* HAKKIMDA****/
+
+.about{
+    flex-direction: column;
+}
+.about > div{
+    width: 100%;
+}
+
+/* gelecekler */
+
+.delete{
+    display: inherit;
+}
+.project > *{
+        margin: 0px;
+}
+.project > div > div> iframe{
+    position: relative;
+    left: 0;
+    width: 100vw;
+    height: 60vw;
+    margin: 15px auto;
+    }
+.project > div > div > h2{
+        margin: 10px;
+}
+.project > div > div > p{
+        margin: 10px;
+}
+.project > p{
+        margin: 10px;
+}
+.firstColumn{
+    border: none;
+}
+.yorum > span > img{
+    width: 60px;
+    height: 60px;
+}
+.harf{
+    width: 60px;
+    height: 60px;
+    font-size: 3.2rem;
+}
+.yorum > :nth-child(2){
+    width: calc(100% - 115px);
+}
+legend{
+    width: 160px;
+}
+
+.logo h2{
+visibility: hidden;
+}
+
+input[type="range"]::before {
+    top: -12px; 
+}
+.menu > a > h2::before{
+top: 16px;
+} 
+
+
+}
+
+
+
+
+
+
+
+
+
+/* x small screen */
+
+@media screen and (min-width: 1px) and (max-width: 273px) {
+
+    *{
+    font-size: 0.7rem;
+}
+/* NAV*** */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav img{
+    width: 100px;
+    height: 100px;
+}
+.nav > :nth-child(1){
+    margin: auto 0;
+}
+.menu{
+    flex-direction: column;
+}
+
+/* HAKKIMDA****/
+
+.about{
+    flex-direction: column;
+}
+.about > div{
+    width: 100%;
+}
+
+/* gelecekler */
+
+.delete{
+    display: inherit;
+}
+.project > *{
+        margin: 0px;
+}
+.project > div > div> iframe{
+    position: relative;
+    left: 0;
+    width: 100vw;
+    height: 60vw;
+    margin: 15px auto;
+    }
+.project > div > div > h2{
+        margin: 10px;
+}
+.project > div > div > p{
+        margin: 10px;
+}
+.project > p{
+        margin: 10px;
+}
+.firstColumn{
+    border: none;
+}
+.yorum > span > img{
+    width: 60px;
+    height: 60px;
+}
+.harf{
+    width: 60px;
+    height: 60px;
+    font-size: 3.2rem;
+}
+.yorum > :nth-child(2){
+    width: calc(100% - 115px);
+}
+legend{
+    width: 160px;
+}
+
+.logo h2{
+visibility: hidden;
+}
+input[type="range"]::before {
+    top: -8px; 
+}
+.menu > a > h2::before{
+top: 13px;
+} 
+
+}
