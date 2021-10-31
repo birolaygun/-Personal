@@ -15,9 +15,9 @@ const App = (props) => {
       <Nav />
 
       <Route path="/" exact component={Hakkımda} />
-      <Route path="/yaptigim_isler" exact component={Projects} />
-      <Route path="/yorumlar" exact component={Yorumlar} />
-      <Route path="/iletisim" exact component={Iletişim} />
+      <Route path="/yaptigim_isler"  component={Projects} />
+      <Route path="/yorumlar"  component={Yorumlar} />
+      <Route path="/iletisim"  component={Iletişim} />
     </main>
   );
 };

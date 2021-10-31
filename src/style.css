@@ -75,7 +75,10 @@ transition: 0.3s ease-in-out;
     
 }
 .firstColumn > img {
-    width: 200px;
+
+    width: 25vw;
+    min-width: 350px;
+    max-width: 450px;
     margin: auto;
 }
 .head{
@@ -227,7 +230,7 @@ input[type="range"]::before {
 .project > *{
         margin: 20px;
 }
-.project h1{
+.project > h1{
     text-align: center;
     padding: 15px;
     font-weight: bold;
@@ -410,6 +413,9 @@ top: -5px;
 
 
 
+
+
+
 /* medium screen */
 
 @media screen and (min-width: 500px) and (max-width: 799px) {
@@ -521,6 +527,10 @@ top: 20px;
 .about > div{
     width: 100%;
 }
+.firstColumn > img {
+    min-width: 0;
+    width:100%;
+}
 
 /* gelecekler */
 
@@ -601,8 +611,9 @@ top: 16px;
     justify-content: space-between;
 }
 .nav img{
-    width: 100px;
-    height: 100px;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
 }
 .nav > :nth-child(1){
     margin: auto 0;
@@ -662,7 +673,6 @@ top: 16px;
 legend{
     width: 160px;
 }
-
 .logo h2{
 visibility: hidden;
 }
@@ -672,5 +682,8 @@ input[type="range"]::before {
 .menu > a > h2::before{
 top: 13px;
 } 
-
+.firstColumn > img {
+    min-width: 0;
+    width:100%;
+}
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../components/galeri/Baı.jpg";
+import photo from "../components/galeri/Brl.jpg";
 
 const Hakkımda = () => {
   return (

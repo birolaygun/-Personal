@@ -77,8 +77,7 @@ const Yorumlar = (props) => {
             </div>
             <button onClick={(e)=>{
                 if (name === "") {
-                  alert("Lütfen İsim Giriniz");
-                } else if (comment === "") {
+                  alert("Lütfen İsim Giriniz");}else if (comment === "") {
                   alert("Lütfen Yorum Giriniz");
                 } else{
                     props.addcomment(e, name, comment, photo);
@@ -105,6 +104,5 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, { addcomment, deletee })(Yorumlar);
-// export default connect(mapStateToProps, { addComment })(App);
 
 

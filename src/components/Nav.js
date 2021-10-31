@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import logo from "../components/galeri/logo.gif";
 
-import {
-  // artılarıSilme,
-} from "../actions";
 
 const Nav = (props) => {
 
@@ -41,6 +38,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, {
-  // artılarıSilme,
-})(Nav);
+export default connect(mapStateToProps )(Nav);
