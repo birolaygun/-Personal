@@ -3,8 +3,8 @@ import photo from "../components/galeri/Baı.jpg";
 
 const Hakkımda = () => {
   return (
-    <div className="hakkımda">
-      <h1>HAKKIMDA</h1>
+    <section className="hakkımda">
+      <header> <h1>HAKKIMDA</h1> </header> 
       <div className="about">
         <div className="firstColumn">
           <img src={photo} alt="photo1" />
@@ -265,7 +265,7 @@ const Hakkımda = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -2,8 +2,8 @@ import React from "react";
 
 const Iletişim = () => {
   return (
-    <div className="iletişim">
-      <h1>İLETİŞİM</h1>
+    <section className="iletişim">
+      <header><h1>İLETİŞİM</h1> </header> 
 
       <div className="logo">
         <h2>Birol AYGÜN</h2>
@@ -78,7 +78,7 @@ const Iletişim = () => {
           <p>birolaygun.bilisim@gmail.com</p>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

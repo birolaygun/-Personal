@@ -227,7 +227,7 @@ input[type="range"]::before {
 .project > *{
         margin: 20px;
 }
-.project > h1{
+.project h1{
     text-align: center;
     padding: 15px;
     font-weight: bold;

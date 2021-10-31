@@ -2,8 +2,8 @@ import React from 'react'
 
 const Projects = (props) => {
     return (
-      <div className="project">
-        <h1> YAPTIĞIM İŞLER </h1>
+      <section className="project">
+       <header><h1> YAPTIĞIM İŞLER </h1> </header> 
         <p>
           Merhaba. bu sayfada yapmış olduğum projelerimden birkaçını sizlere
           anlatacağım. Umarım beğenirsiniz.
@@ -19,7 +19,7 @@ const Projects = (props) => {
               Web Tasarımı öğrenmeye başlayalı henüz 20 gün olmuş iken bu
               projeyi geliştirdim. Geliştirdiğim bu siteyi ücretsiz domain ve
               hosting hizmeti veren <b>somee</b> sayesinde
-              http://birol.somee.com/ domaini ile yayınlamıştım da. Sadece HTML
+              http://birol.somee.com/ domaini ile yayınlamıştım. Sadece HTML
               ve CSS kullanarak oluşturduğum bu siteyi yayınlayabilmek o
               zamanlar benim için tarifsiz bir mutluluktu. Özellikle{" "}
               <b> Hover Effect</b>ler ve <b> Animasyon</b>lar üzerinde çok
@@ -123,7 +123,11 @@ const Projects = (props) => {
                 de yapabilmektedir.
               </li>
             </ul>
-            <p><b>Ne anlatmak istediğimi videoda daha iyi anlayacağınızdan eminim.</b></p>
+            <p>
+              <b>
+                Ne anlatmak istediğimi videoda daha iyi anlayacağınızdan eminim.
+              </b>
+            </p>
             <iframe
               src="https://www.youtube.com/embed/NHQqDsnW-hg"
               title="YouTube video player4"
@@ -133,7 +137,7 @@ const Projects = (props) => {
             ></iframe>
           </div>
         </div>
-      </div>
+      </section>
     );
 }
 

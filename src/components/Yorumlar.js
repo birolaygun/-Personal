@@ -9,8 +9,8 @@ const Yorumlar = (props) => {
     const [photo, setPhoto] = useState("")
 
     return (
-      <div className="yorumlar">
-        <h1>YORUMLAR</h1>
+      <section className="yorumlar">
+        <header><h1>YORUMLAR</h1></header> 
 
         <div>
           {props.mydata.yorumlar.map((yorum) => (
@@ -94,7 +94,7 @@ const Yorumlar = (props) => {
             </button>
           </fieldset>
         </form>
-      </div>
+      </section>
     );
 }
 
