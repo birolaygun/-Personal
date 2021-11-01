@@ -77,8 +77,11 @@ const Yorumlar = (props) => {
             </div>
             <button onClick={(e)=>{
                 if (name === "") {
-                  alert("Lütfen İsim Giriniz");}else if (comment === "") {
+                  alert("Lütfen İsim Giriniz");
+                e.preventDefault();}
+                else if (comment === "") {
                   alert("Lütfen Yorum Giriniz");
+                  e.preventDefault();
                 } else{
                     props.addcomment(e, name, comment, photo);
                     setName("");
