@@ -15,8 +15,10 @@ const Yorumlar = (props) => {
         <div>
           {props.mydata.yorumlar.map((yorum) => (
             <div key={Math.random()} className="yorum">
-              <span>
-                  {yorum.photo !== "" ? <img src={yorum.photo} alt="photo2" /> : <div className="harf">
+              <span >
+                  {yorum.photo !== "" ? <img src={yorum.photo} alt="hatalı link" /> : <div 
+                  
+                  style={{backgroundColor: yorum.backgroundColor }} className="harf">
                     {yorum.name.[0].toUpperCase()}
                   </div> }
                 

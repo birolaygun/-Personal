@@ -270,27 +270,31 @@ margin: 10px;
     font-weight: bold;
 }
 .yorum{
-    padding: 10px;
-    margin: 10px;
+    padding: 5px 10px;
+    margin: 5px 10px;
     border-radius: 15px;
     background-color: rgba(90, 90, 90, 0.11);
 }
+.yorum h2{
+font-size: 1.3rem;
+font-weight: bold;
+}
 .yorum > span > img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-right: 20px;
     border-radius: 50px;
     vertical-align: middle;
 }
 .harf{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-right: 20px;
     border-radius: 50px;
-    background-color: skyblue;
     text-align: center;
     font-family:  serif;
-    font-size: 3.6rem;
+    font-size: 2.6rem;
+    text-shadow: 1px 1px 3px white, -1px -1px 3px;
 }
 .yorum > span{
     display: inline-block;
@@ -313,10 +317,10 @@ fieldset > :nth-child(2){
     margin-top: 25px;
 }
 fieldset > button{
-    width: 200px;
-    position: relative;
-    left: calc(50% - 100px);
+    width: 70vw;
+    max-width: calc(274px * 7 / 10);
     margin-bottom: 5px;
+    margin-left: calc(50% - 96.5px) ;
 }
 legend{
     position: absolute;
@@ -467,13 +471,13 @@ display: block;
     border: none;
 }
 .yorum > span > img{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 .harf{
-    width: 70px;
-    height: 70px;
-    font-size: 3.4rem;
+    width: 50px;
+    height: 50px;
+    font-size: 2.4rem;
 }
 
 .yorum > :nth-child(2){
@@ -537,6 +541,9 @@ top: 20px;
 .delete{
     display: inherit;
 }
+
+/* projeler */
+
 .project > *{
         margin: 0px;
 }
@@ -560,13 +567,13 @@ top: 20px;
     border: none;
 }
 .yorum > span > img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 .harf{
-    width: 60px;
-    height: 60px;
-    font-size: 3.2rem;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
 }
 .yorum > :nth-child(2){
     width: calc(100% - 115px);
@@ -659,13 +666,13 @@ top: 16px;
     border: none;
 }
 .yorum > span > img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 .harf{
-    width: 60px;
-    height: 60px;
-    font-size: 3.2rem;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
 }
 .yorum > :nth-child(2){
     width: calc(100% - 115px);
@@ -685,5 +692,10 @@ top: 13px;
 .firstColumn > img {
     min-width: 0;
     width:100%;
+}
+fieldset > button{
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: auto ;
 }
 }

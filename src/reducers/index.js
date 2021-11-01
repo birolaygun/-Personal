@@ -18,6 +18,8 @@ export const reducer = (state = INITIAL_STATE, action) => {
             photo: action.photo,
             comment: action.comment,
             id: Math.random(),
+            backgroundColor:
+              "#" + (((1 << 24) * Math.random()) | 0).toString(16),
           },
         ],
       };
