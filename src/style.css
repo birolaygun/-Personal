@@ -249,12 +249,15 @@ input[type="range"]::before {
 .firstHead{
     display: flex;
 }
-.project > div > div> iframe{
+.ifream{
+  width: min-content;
+  margin: auto;
+} 
+.project iframe{
     width: 70vw;
     height: 42vw;
-    position: relative;
-    left: calc(50% - 35vw);
-}
+    margin: auto;
+}       
 .project > div > div > p{
 margin: 10px;
 }

@@ -3,7 +3,9 @@ import React from 'react'
 const Projects = (props) => {
     return (
       <section className="project">
-       <header><h1> YAPTIĞIM İŞLER </h1> </header> 
+        <header>
+          <h1> YAPTIĞIM İŞLER </h1>{" "}
+        </header>
         <p>
           Merhaba. bu sayfada yapmış olduğum projelerimden birkaçını sizlere
           anlatacağım. Umarım beğenirsiniz.
@@ -19,21 +21,23 @@ const Projects = (props) => {
               Web Tasarımı öğrenmeye başlayalı henüz 20 gün olmuş iken bu
               projeyi geliştirdim. Geliştirdiğim bu siteyi ücretsiz domain ve
               hosting hizmeti veren <b>somee</b> sayesinde
-              http://birol.somee.com/ domaini ile yayınlamıştım. Sadece HTML
-              ve CSS kullanarak oluşturduğum bu siteyi yayınlayabilmek o
-              zamanlar benim için tarifsiz bir mutluluktu. Özellikle{" "}
-              <b> Hover Effect</b>ler ve <b> Animasyon</b>lar üzerinde çok
-              özenle çalışmıştım. Tabi yaptığım site çok tıklanma almayınca
-              beklediği reklam gelirini alamayan <b>somee</b> kısa zamanda
-              sitemi yayndan kaldırdı. Videoda bu sitemi izleyebilirsiniz.
+              http://birol.somee.com/ domaini ile yayınlamıştım. Sadece HTML ve
+              CSS kullanarak oluşturduğum bu siteyi yayınlayabilmek o zamanlar
+              benim için tarifsiz bir mutluluktu. Özellikle <b> Hover Effect</b>
+              ler ve <b> Animasyon</b>lar üzerinde çok özenle çalışmıştım. Tabi
+              yaptığım site çok tıklanma almayınca beklediği reklam gelirini
+              alamayan <b>somee</b> kısa zamanda sitemi yayndan kaldırdı.
+              Videoda bu sitemi izleyebilirsiniz.
             </p>
-            <iframe
-              src="https://www.youtube.com/embed/fYdxx9rzKF4"
-              title="YouTube video player 1"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <div className="ifream">
+              <iframe
+                src="https://www.youtube.com/embed/fYdxx9rzKF4"
+                title="YouTube video player 1"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
 
@@ -49,13 +53,15 @@ const Projects = (props) => {
               <b>Güncel Kur</b> üzerinden döviz hesaplamaları yapılabiliyordu.
               Güzel bir çalışmaydı.
             </p>
-            <iframe
-              src="https://www.youtube.com/embed/bW9eQJyI_8s"
-              title="YouTube video player2"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <div className="ifream">
+              <iframe
+                src="https://www.youtube.com/embed/bW9eQJyI_8s"
+                title="YouTube video player2"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
 
@@ -71,13 +77,15 @@ const Projects = (props) => {
               sayım sayacı ekledim. Belirttiğiniz zaman içinde bu hedefe
               ulaşabilecek misiniz ?
             </p>
-            <iframe
-              src="https://www.youtube.com/embed/9bzpiLqYDaM"
-              title="YouTube video player3"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <div className="ifream">
+              <iframe
+                src="https://www.youtube.com/embed/9bzpiLqYDaM"
+                title="YouTube video player3"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
 
@@ -128,13 +136,15 @@ const Projects = (props) => {
                 Ne anlatmak istediğimi videoda daha iyi anlayacağınızdan eminim.
               </b>
             </p>
-            <iframe
-              src="https://www.youtube.com/embed/NHQqDsnW-hg"
-              title="YouTube video player4"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <div className="ifream">
+              <iframe
+                src="https://www.youtube.com/embed/NHQqDsnW-hg"
+                title="YouTube video player4"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
