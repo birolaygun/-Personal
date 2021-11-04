@@ -55,18 +55,18 @@ transition: 0.3s ease-in-out;
 
 /* HAKKIMDA*** */
 
-.hakkımda{
+.about{
     margin-top: 128px;
 }
-.hakkımda h1{
+.about h1{
     text-align: center;
     padding: 15px;
     font-weight: bold;
 }
-.about{
+.aboutMe{
     display: flex;
 }
-.about > div{
+.aboutMe > div{
     display: flex;
     width: 50%;
     padding: 20px;
@@ -230,7 +230,7 @@ input[type="range"]::before {
 .project > *{
         margin: 20px;
 }
-.project > h1{
+.project h1{
     text-align: center;
     padding: 15px;
     font-weight: bold;
@@ -264,34 +264,34 @@ input[type="range"]::before {
 margin: 10px;
 }
 
-/* yorumlar */
+/* comments */
 
-.yorumlar{
+.comments{
     margin-top: 128px;
 }
-.yorumlar h1{
+.comments h1{
     text-align: center;
     padding: 15px;
     font-weight: bold;
 }
-.yorum{
+.comment{
     padding: 5px 10px;
     margin: 5px 10px;
     border-radius: 15px;
     background-color: rgba(90, 90, 90, 0.11);
 }
-.yorum h2{
+.comment h2{
 font-size: 1.3rem;
 font-weight: bold;
 }
-.yorum > span > img{
+.comment > span > img{
     width: 60px;
     height: 60px;
     margin-right: 20px;
     border-radius: 50px;
     vertical-align: middle;
 }
-.harf{
+.letter{
     width: 60px;
     height: 60px;
     margin-right: 20px;
@@ -301,10 +301,10 @@ font-weight: bold;
     font-size: 2.6rem;
     text-shadow: 1px 1px 3px white, -1px -1px 3px;
 }
-.yorum > span{
+.comment > span{
     display: inline-block;
     vertical-align: middle;}
-.yorum > :nth-child(2){
+.comment > :nth-child(2){
     width: calc(100% - 170px);
 }
 form{
@@ -337,12 +337,12 @@ legend{
     padding: 3px;
 }
 
-/*.iletişim*/
+/*.contact*/
 
-.iletişim{
+.contact{
     margin-top: 128px;
 }
-.iletişim h1{
+.contact h1{
     text-align: center;
     padding: 15px;
     font-weight: bold;
@@ -397,16 +397,16 @@ top: -5px;
 
 
 
-.adres{
+.address{
     margin: 10px
 }
-.adres p{
+.address p{
     margin: 3px
 }
-.adres >div{
+.address >div{
     position: relative
 }
-.adres iframe{
+.address iframe{
           width:100%;
           height:55vw;
           max-height: 600px;
@@ -454,13 +454,13 @@ display: block;
 
 /* HAKKIMDA****/
 
-.about{
+.aboutMe{
     flex-direction: column;
 }
-.about > div{
+.aboutMe > div{
     width: 100%;
 }
-.about > div > *{
+.aboutMe > div > *{
     margin: auto;
     width: 400px;
 }
@@ -475,17 +475,17 @@ display: block;
 .firstColumn{
     border: none;
 }
-.yorum > span > img{
+.comment > span > img{
     width: 50px;
     height: 50px;
 }
-.harf{
+.letter{
     width: 50px;
     height: 50px;
     font-size: 2.4rem;
 }
 
-.yorum > :nth-child(2){
+.comment > :nth-child(2){
     width: calc(100% - 140px);
 }
 legend{
@@ -530,10 +530,10 @@ top: 20px;
 
 /* HAKKIMDA****/
 
-.about{
+.aboutMe{
     flex-direction: column;
 }
-.about > div{
+.aboutMe > div{
     width: 100%;
 }
 .firstColumn > img {
@@ -571,16 +571,16 @@ top: 20px;
 .firstColumn{
     border: none;
 }
-.yorum > span > img{
+.comment > span > img{
     width: 40px;
     height: 40px;
 }
-.harf{
+.letter{
     width: 40px;
     height: 40px;
     font-size: 2rem;
 }
-.yorum > :nth-child(2){
+.comment > :nth-child(2){
     width: calc(100% - 115px);
 }
 legend{
@@ -636,10 +636,10 @@ top: 16px;
 
 /* HAKKIMDA****/
 
-.about{
+.aboutMe{
     flex-direction: column;
 }
-.about > div{
+.aboutMe > div{
     width: 100%;
 }
 
@@ -670,16 +670,16 @@ top: 16px;
 .firstColumn{
     border: none;
 }
-.yorum > span > img{
+.comment > span > img{
     width: 40px;
     height: 40px;
 }
-.harf{
+.letter{
     width: 40px;
     height: 40px;
     font-size: 2rem;
 }
-.yorum > :nth-child(2){
+.comment > :nth-child(2){
     width: calc(100% - 115px);
 }
 legend{

@@ -7,9 +7,9 @@ import { reducer } from "./reducers/index";
 import { Provider } from "react-redux";
 import { Route } from "react-router-dom";
 import Projects from "./components/Projects";
-import Yorumlar from "./components/Yorumlar";
-import Iletişim from "./components/Iletişim";
-import Hakkımda from "./components/Hakkımda";
+import Comments from "./components/Comments";
+import Contact from "./components/Contact";
+import About from "./components/About";
 
 
 const store = createStore(
@@ -21,10 +21,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <Route path="/" exact component={Hakkımda} />
+        
+        <Route path="/" exact component={About} />
         <Route path="/yaptigim_isler" exact component={Projects} />
-        <Route path="/yorumlar" exact component={Yorumlar} />
-        <Route path="/iletisim" exact component={Iletişim} />
+        <Route path="/yorumlar" exact component={Comments} />
+        <Route path="/iletisim" exact component={Contact} />
 
         <App />
       </Router>

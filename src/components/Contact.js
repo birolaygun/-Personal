@@ -1,8 +1,8 @@
 import React from "react";
 
-const Iletişim = () => {
+const Contact = () => {
   return (
-    <section className="iletişim">
+    <section className="contact">
       <header><h1>İLETİŞİM</h1> </header> 
 
       <div className="logo">
@@ -32,7 +32,7 @@ const Iletişim = () => {
       </div>
 
       <div className="bar"></div>
-      <div className="adres">
+      <div className="address">
         <div>
           <h2>Adres:</h2>
         </div>
@@ -82,4 +82,4 @@ const Iletişim = () => {
   );
 };
 
-export default Iletişim;
+export default Contact;

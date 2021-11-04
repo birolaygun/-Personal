@@ -1,11 +1,14 @@
 import React from "react";
-import photo from "../components/galeri/Brl.jpg";
+import photo from "../components/gallery/Brl.jpg";
 
-const Hakkımda = () => {
+const About = () => {
   return (
-    <section className="hakkımda">
-      <header> <h1>HAKKIMDA</h1> </header> 
-      <div className="about">
+    <section className="about">
+      <header>
+        {" "}
+        <h1>HAKKIMDA</h1>{" "}
+      </header>
+      <div className="aboutMe">
         <div className="firstColumn">
           <img src={photo} alt="photo1" />
           <div className="personel">
@@ -269,4 +272,4 @@ const Hakkımda = () => {
   );
 };
 
-export default Hakkımda;
+export default About;

@@ -1,7 +1,7 @@
-import { yorumlar } from "../data";
+import { comments } from "../data";
 
 const INITIAL_STATE = {
-  yorumlar,
+  comments,
 };
 
 
@@ -11,8 +11,8 @@ export const reducer = (state = INITIAL_STATE, action) => {
     case "ADD_COMMENT":
       return {
         ...state,
-        yorumlar: [
-          ...state.yorumlar,
+        comments: [
+          ...state.comments,
           {
             name: action.name,
             photo: action.photo,
@@ -24,12 +24,13 @@ export const reducer = (state = INITIAL_STATE, action) => {
         ],
       };
 
-    case "DELETEE":
+    case "DELETE_ITEM":
       return {
         ...state,
-        yorumlar: state.yorumlar.filter((comm) => comm.id !== action.payload),
+        comments: state.comments.filter(
+          (comment) => comment.id !== action.payload
+        ),
       };
-
 
     default:
       return state;

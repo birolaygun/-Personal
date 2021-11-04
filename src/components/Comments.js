@@ -1,36 +1,36 @@
 import React, {useState} from 'react'
 import { connect } from "react-redux";
-import { addcomment, deletee } from "../actions";
+import { addComment, deleteItem } from "../actions";
 
-const Yorumlar = (props) => {
+const Comments = (props) => {
 
     const [name, setName] = useState("")
     const [comment, setComment] = useState("")
     const [photo, setPhoto] = useState("")
 
     return (
-      <section className="yorumlar">
+      <section className="comments">
         <header><h1>YORUMLAR</h1></header> 
 
         <div>
-          {props.mydata.yorumlar.map((yorum) => (
-            <div key={Math.random()} className="yorum">
+          {props.mydata.comments.map((comment) => (
+            <div key={Math.random()} className="comment">
               <span >
-                  {yorum.photo !== "" ? <img src={yorum.photo} alt="hatalı link" /> : <div 
+                  {comment.photo !== "" ? <img src={comment.photo} alt="hatalı link" /> : <div 
                   
-                  style={{backgroundColor: yorum.backgroundColor }} className="harf">
-                    {yorum.name.[0].toUpperCase()}
+                  style={{backgroundColor: comment.backgroundColor }} className="letter">
+                    {comment.name.[0].toUpperCase()}
                   </div> }
                 
               </span>
               <span>
-                <h2>{yorum.name}</h2>
-                <p>{yorum.comment}</p>
+                <h2>{comment.name}</h2>
+                <p>{comment.comment}</p>
               </span>
               <span>
                 <button onClick={(e)=>{
                  if (window.confirm("Yorumu silmek istediğinizden emin misiniz?") )
-                  {props.deletee(yorum.id)}}
+                  {props.deleteItem(comment.id)}}
                   } className="btn btn-danger">Sil</button>
               </span>
             </div>
@@ -85,7 +85,7 @@ const Yorumlar = (props) => {
                   alert("Lütfen Yorum Giriniz");
                   e.preventDefault();
                 } else{
-                    props.addcomment(e, name, comment, photo);
+                    props.addComment(e, name, comment, photo);
                     setName("");
                     setComment("");
                     setPhoto("");
@@ -108,6 +108,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { addcomment, deletee })(Yorumlar);
+export default connect(mapStateToProps, { addComment, deleteItem })(Comments);
 
 

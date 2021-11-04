@@ -1,1 +1,1 @@
-export const yorumlar = [];
+export const comments = [];
