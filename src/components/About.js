@@ -68,12 +68,7 @@ const About = () => {
                 <p>
                   Web Tasarımı ve Kod <small>(Öğrenci)</small>{" "}
                 </p>
-                <li>
-                  Polis Akademisi <small>(2008-2012)</small>
-                </li>
-                <p>
-                  Güvenlik Birimleri <small>(Mezun)</small>{" "}
-                </p>
+          
                 <li>
                   ODTÜ <small>(2007-2008)</small>
                 </li>
@@ -123,16 +118,6 @@ const About = () => {
                   sayımı, ürünlerin teslim alınması ve gönderilmesi,
                   irsaliyelerin düzenlenmesi, Stok bilgilerinin doğru olmasının
                   sağlanması.
-                </p>
-              </div>
-              <div>
-                <h2>
-                  Emniyet Genel Müdürlüğü <span>(2012-2016)</span>
-                </h2>
-                <h3>- Komiser Yardımcısı</h3>
-                <p>
-                  Adli, İdari ve Önleyici Polislik, Büro Amirliği, Grup
-                  Amirliği.
                 </p>
               </div>
             </div>
